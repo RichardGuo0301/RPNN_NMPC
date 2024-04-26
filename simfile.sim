@@ -1,0 +1,27 @@
+SIMFILE
+
+SET_MACRO $(ROOT_FILE_NAME)$ Run_9cec15e2-9036-4733-97f6-aa9cebdf0c05
+SET_MACRO $(OUTPUT_PATH)$ C:\Users\Public\Documents\CarSim2020.0_Data (1)\Results
+SET_MACRO $(WORK_DIR)$ C:\Users\Public\Documents\CarSim2020.0_Data (1)\
+SET_MACRO $(OUTPUT_FILE_PREFIX)$ $(WORK_DIR)$Results\Run_9cec15e2-9036-4733-97f6-aa9cebdf0c05\LastRun
+
+FILEBASE $(OUTPUT_FILE_PREFIX)$
+INPUT $(WORK_DIR)$Results\$(ROOT_FILE_NAME)$\Run_all.par
+INPUTARCHIVE $(OUTPUT_FILE_PREFIX)$_all.par
+ECHO $(OUTPUT_FILE_PREFIX)$_echo.par
+FINAL $(OUTPUT_FILE_PREFIX)$_end.par
+LOGFILE $(OUTPUT_FILE_PREFIX)$_log.txt
+ERDFILE $(OUTPUT_FILE_PREFIX)$.erd
+PROGDIR C:\Program Files (x86)\CarSim2020.0_Prog\
+DATADIR C:\Users\Public\Documents\CarSim2020.0_Data (1)\
+GUI_REFRESH_V CarSim_RefreshEvent_256900
+RESOURCEDIR C:\Program Files (x86)\CarSim2020.0_Prog\\Resources\
+PRODUCT_ID CarSim
+PRODUCT_VER 2020.0
+ANIFILE C:\Users\Public\Documents\CarSim2020.0_Data (1)\runs\animator.par
+VEHICLE_CODE i_i
+EXT_MODEL_STEP 0.00100000
+PORTS_IMP 1,5
+PORTS_EXP 1,26
+
+END
