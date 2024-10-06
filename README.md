@@ -19,31 +19,24 @@ The proposed approach employs:
 - **NMPC for higher-level control**, managing the vehicle's path tracking while minimizing steering angle inputs.
 - **RPNN for uncertainty compensation**, specifically addressing the nonlinear uncertainties in lateral tire forces, ensuring system stability through adaptive learning based on Lyapunov stability theory.
 
-## Getting Started
-
-### Prerequisites
+## Prerequisites
 To run the simulations and implement the control system, you will need:
 - **MATLAB/Simulink**: The main environment used for modeling and simulation.
 - **CarSim**: Used for vehicle dynamics simulation, allowing for realistic co-simulations with Simulink.
-- **Python (optional)**: For data processing or visualization.
 
-### Installation
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/RichardGuo0301/Vehicle_Dynamics_Control.git
+## Results and Analysis
+Our experimental results indicate that the proposed RPNN+NMPC controller:
+## Results and Analysis
 
+Our experimental results indicate that the proposed RPNN+NMPC controller:
 
-### Running Simulations
-.
-├── NMPC_casadi_yhn.m                # MATLAB script for NMPC implementation using CasADi
-├── Nmpc_pathctl_casadi.slx          # Simulink model for path tracking control using CasADi
-├── adapt_fy.m                       # MATLAB script for adapting lateral forces
-├── data.mat                         # Data file required for simulations
-├── data_com.mat                     # Additional data file for simulations
-├── plotfig.m                        # Script for plotting simulation results
-├── casadi-windows-matlabR2016a-v3.5.5/  # CasADi toolbox for MATLAB R2016a
-└── slprj/                           # Simulink project-related files
+- Achieves more accurate path-tracking performance with only a small dataset, thanks to the high adaptability of RPNN.
+- Reduces mean lateral error by 48% compared to NMPC alone, highlighting the advantages of integrating neural network-based compensation.
+- Demonstrates reduced computational burden, validated through real-time testing on an Intel i7 CPU, with a computational time ratio lower than traditional approaches.
 
+![Path Tracking Trajectory](path_tracking_trajectory.png)
+
+The above figure shows the path tracking trajectory achieved by the proposed control system during the double lane change (DLC) scenario.
 
 ### Citation
 @inproceedings{Guo2024VTC,
