@@ -25,8 +25,6 @@ To run the simulations and implement the control system, you will need:
 - **CarSim**: Used for vehicle dynamics simulation, allowing for realistic co-simulations with Simulink.
 
 ## Results and Analysis
-Our experimental results indicate that the proposed RPNN+NMPC controller:
-## Results and Analysis
 
 Our experimental results indicate that the proposed RPNN+NMPC controller:
 
@@ -34,7 +32,7 @@ Our experimental results indicate that the proposed RPNN+NMPC controller:
 - Reduces mean lateral error by 48% compared to NMPC alone, highlighting the advantages of integrating neural network-based compensation.
 - Demonstrates reduced computational burden, validated through real-time testing on an Intel i7 CPU, with a computational time ratio lower than traditional approaches.
 
-![Path Tracking Trajectory](RPNN_NMPC/images/path_tracking_trajectory.png)
+![Path Tracking Trajectory](RPNN_NMPC/images/images/path_tracking_trajectory.png)
 
 The above figure shows the path tracking trajectory achieved by the proposed control system during the double lane change (DLC) scenario.
 
