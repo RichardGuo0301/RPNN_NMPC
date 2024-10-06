@@ -34,9 +34,15 @@ Our experimental results indicate that the proposed RPNN+NMPC controller:
 
 ![Path Tracking Trajectory](images/images/path_tracking_trajectory.png)
 
-The above figure shows the path tracking trajectory achieved by the proposed control system during the double lane change (DLC) scenario.
+**Fig. 1. Lateral Path Tracking Error Comparison in the DLC Scenario**  
 
-### Citation
+![Path Tracking Trajectory](images/images/DLC.png)
+
+**Fig. 2.Path Tracking Trajectory in the DLC Scenario**  
+
+The above figures show the path tracking trajectory achieved by the proposed control system during the double lane change (DLC) scenario.
+
+## Citation
 @inproceedings{Guo2024VTC,
   author = {Fangrui Guo and Quan Zhang},
   title = {A Novel Approach for Integrated Vehicle Dynamics Management Using Improved Adaptive Neural Network},
