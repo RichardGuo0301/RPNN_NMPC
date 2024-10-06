@@ -1,3 +1,6 @@
+### Running Simulations
+The project includes several Simulink models and MATLAB scripts:
+
 A Novel Approach for Integrated Vehicle Dynamics Management
 
 This repository contains the implementation of a novel approach for autonomous vehicle path tracking and integrated vehicle dynamics management, as presented in our recent paper. This approach leverages a Nonlinear Model Predictive Control (NMPC) algorithm combined with an enhanced Random Projection Neural Network (RPNN) to address unknown nonlinearities in vehicle dynamics, achieving accurate path tracking with reduced computational burden.
@@ -74,3 +77,13 @@ License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
+
+.
+├── NMPC_casadi_yhn.m                # MATLAB script for NMPC implementation using CasADi
+├── Nmpc_pathctl_casadi.slx          # Simulink model for path tracking control using CasADi
+├── adapt_fy.m                       # MATLAB script for adapting lateral forces
+├── data.mat                         # Data file required for simulations
+├── data_com.mat                     # Additional data file for simulations
+├── plotfig.m                        # Script for plotting simulation results
+├── casadi-windows-matlabR2016a-v3.5.5/  # CasADi toolbox for MATLAB R2016a
+└── slprj/                           # Simulink project-related files
